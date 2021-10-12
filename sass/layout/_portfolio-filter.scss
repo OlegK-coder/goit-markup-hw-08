@@ -1,0 +1,50 @@
+.filter__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.filter__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+// .filter__list {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 56px;
+// }
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__list {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    padding-bottom: 40px;
+  }
+
+  .filter__item {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    padding-bottom: 50px;
+  }
+}
